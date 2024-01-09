@@ -3,8 +3,8 @@ import React from "react";
 import { Menu, MenuItem, Sidebar, useProSidebar } from "react-pro-sidebar";
 
 import { Button, Img, Input, List, SelectBox, Text } from "components";
-import PaymentsCashfreeDashboardPagination from "components/Pagination";
-import PaymentsCashfreeDashboardRowframe2282 from "components/Rowframe";
+import Pagination from "components/Pagination";
+import Rowframe from "components/Rowframe";
 import TableHeaderText from "components/TableHeaderText";
 import TableTextLink from "components/TableTextLink";
 import { data } from "../../utils/data";
@@ -235,7 +235,7 @@ const PaymentscashfreedashboardPage: React.FC = () => {
             </Menu>
           </Sidebar>
           <div className="flex flex-1 flex-col gap-8 items-center justify-start md:px-5 w-full">
-            <PaymentsCashfreeDashboardRowframe2282 className="bg-white-A700 border-b border-blue_gray-100 border-solid flex md:flex-col flex-row gap-4 items-center justify-start max-w-[1216px] sm:px-5 px-8 py-3 w-full justify-between" />
+            <Rowframe className="bg-white-A700 border-b border-blue_gray-100 border-solid flex md:flex-col flex-row gap-4 items-center justify-start max-w-[1216px] sm:px-5 px-8 py-3 w-full justify-between" />
             <div className="flex flex-col gap-8 items-start justify-start max-w-6xl w-full">
               <div className="flex flex-col gap-6 items-start justify-start w-full">
                 <div className="flex flex-col items-start justify-start w-full">
@@ -475,16 +475,8 @@ const PaymentscashfreedashboardPage: React.FC = () => {
                       );
                     })}
                   </List>
-                  <div className="flex flex-col gap-6 items-center justify-start w-auto md:w-full">
-                    <div className="flex flex-col items-center justify-center w-auto md:w-full">
-                      <div className="flex flex-col items-center justify-center w-auto md:w-full">
-                        <div className="flex flex-col items-center justify-center w-auto md:w-full">
-                          <div className="flex flex-col items-center justify-start w-auto md:w-full">
-                            <PaymentsCashfreeDashboardPagination className="flex md:flex-col flex-row gap-6 items-center justify-start w-auto md:w-full" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div className="flex flex-col gap-6 items-center justify-start w-full pt-3">
+                    <Pagination className="flex md:flex-col flex-row gap-6 items-center justify-start w-auto md:w-full" />
                   </div>
                 </div>
               </div>
